@@ -5,61 +5,50 @@
 ==========================================
 Frequently Asked Question (FAQ)
 ==========================================
+This list contain some of the most frequently asked questions pertaining to usage of TroFMIS
 
-TroFMIS is a surveilance system that monitors Tropical Montane Forest in the Eastern Africa region. The tropical montane forests conservation is part
-of the sustainable development goal towards reduction of carbon emission, through development of verifiable methods for REDD+ monitoring and reporting. 
-TroFMIS is keen on applying REDD+ monitoring guidelines outlined by various stakeholders such as UNCCD, UNFCC & FAO on tropical forest and carbon emission reporting.
-The products developed in TroFMIS that supports the tropical forest monitoring and surveilance activities include:
+Data
+==========================================
 
-	* Forest Canopy Density (FCD)
-	* Forest Canopy Changes (FCC)
-	* Forest Disturbance Monitoring - Radar 
-	* Forest Alerts - Radar
-	
-The products in TroFMIS enables key stakeholders and end users in monitoring the continous 
-vegetation change within their forests of interest, in addition to near real time monitoring of the 
-forest disturbance. The various users, will also receive periodical alerts pertaining to the
-disturbance of the forest canopy densties within their forests of interests.
+How many types of products do you have in TroFMIS
+---------------------------------------------------
+TroFMIS has five types of products, namely
+* Forest Canopy Density
+* Forest Canopy Changes
+* Carbon Flux
+* Forest Surveilance
+* Forest Alerts
 
+How were these products generated?
+---------------------------------------------------
+This products were generated using the equations discussed in background sections. 
+However, it is reccomended that scripting is done through platforms such as google earth engine
+in order to reduce the work of downloading raw datasets.
 
+Can we access the datasets from TroFMIS?
+---------------------------------------------------
+Yes, the datasets can be accessed through the download button in TroFMIS.
 
-Get in touch with the team
---------------------------
-To get in touch with TroFMIS team and developers, please contact the `IGAD Climatic Prediction and Application Centre (ICPAC) <https://www.icpac.net/>`_.
+System Use
+==========================================
+How is TroFMIS configured?
+---------------------------------------------------
+TroFMIS is configured to work online, as long as the user has the link to the system
+they could use the system and generate the statistics for the various products.
 
-Authors
---------------
-TroFMIS system was implemented by ICPAC under the Global Monitoring for Environment and Security & Africa(GMES & Africa)
-project. A project co-funded by the African Union (AU) and the European Union (EU).
+Is TroFMIS a payed service?
+---------------------------------------------------
+No, TroFMIS is a free service, developed under GMES & Africa project as highlighted in the introduction section.
 
-Contributors to the project
-include Mr. Kenneth Kemucie Mwangi, Mr. Eugene Kayijamahe, Ms. Viola Otieno, Dr. Mwangi Kinyanjui, Dr. Benson Kenduwyo, Ms. Vivianne Meta, Mr. Seth Nyawacha, Mr. Collins Asega, Mr. Derick Ongeri, Ms. Risper Mutinda, Mr. Morris Mwaura, and Mr. Simon Ndarau.
+Will TroFMIS be there 5 years to come?
+---------------------------------------------------
+The goal is to develop a robust system which will depend on minimal human intervention, thus 
+assuring its longetivity. Outreach for usage is also vital for the TroFMIS system, in order to attaract a wide range of users.
 
-.. figure:: ../_static/Images/pp.PNG
-	 :height: 94
-	 :width: 550
-	 :alt: partners
-	 :align: center
-
-
-Aknowledgement
-------------------
-Special appreciation to `ICPAC <https://www.icpac.net/>`_ team in validation of the TroFMIS products and refining the concept for forest products generation and TroFMIS ergonomics. 
-Appreciation to the national patners who provided feedback on the products generated during stakeholder engagements.
-The `Joint Research Centre (JRC) <https://ec.europa.eu/info/departments/joint-research-centre_en/>`_ was a source of reference in aligning the forest products methodologies.
-
-
-License
---------
-TroFMIS system is free and open-source system. It is licensed under the GNU General Public License, version 2.0 or later.
-
-.. note::
-   This site and the products of TroFMIS region are made available under the 
-   terms of the Creative Commons Attribution 4.0, 
-   International License (CC BY 4.0).
-   The boundaries and names used, and the designations used, in TroFMIS do not 
-   imply official endorsement or acceptance by ICPAC, or its partnering 
-   organizations.
+Is TroFMIS products validated?
+---------------------------------------------------   
+ Validation is ongoing, and we encourage users to also help in validating through giving their 
+ feedback through the email shared in the document.
    
    
 .. figure:: ../_static/Images/trofmis3.png
