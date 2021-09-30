@@ -49,7 +49,7 @@ monitoring and assess forest activities, in order to achieve sustainable natural
 
 .. toctree::
    :maxdepth: 4
-   :caption: Background
+   :caption: TroFMIS Data Preparation 
 
    Background/Forest Canopy Density
    Background/Forest Change
@@ -58,7 +58,7 @@ monitoring and assess forest activities, in order to achieve sustainable natural
 
 .. toctree::
    :maxdepth: 3
-   :caption: TroFMIS Guide
+   :caption: Data Upload and Maintenance
 
    Guide/Service Guide
    Guide/Forest Canopy Density
