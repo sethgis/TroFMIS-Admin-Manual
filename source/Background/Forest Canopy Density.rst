@@ -713,18 +713,146 @@ Please see the description of the code in the blue call outs as shown below.
     :height: 300
     :alt: service schema
     :figclass: align-center
+    
+The acquired image is also taken through cloud masking function as is shown in the code chunk below.
 
-The FCD is expressed as a percentage, and the code chunk beloq is used to normalise the code into percentage as shown below.
+.. figure:: ../_static/Images/cloud.png
+    :width: 600
+    :align: center
+    :height: 300
+    :alt: service schema
+    :figclass: align-center
 
 
 
 
+The FCD is expressed as a percentage, and the code chunk below is used to normalise the code into percentage.
+
+.. figure:: ../_static/Images/Normal.png
+    :width: 600
+    :align: center
+    :height: 300
+    :alt: service schema
+    :figclass: align-center
 
 
+The computatation expression are illustrated below.
 
+.. figure:: ../_static/Images/fcd_compute.png
+    :width: 600
+    :align: center
+    :height: 300
+    :alt: service schema
+    :figclass: align-center
+    
+The generated FCD products are then exported to google drive account for retrieval of the datasets from the drive. To avoid the complexities around downloading the huge tiff files from the drive, it is advisable to mount the google drive on the computer, in order to access the files normally, without necessarily downloading the products. See the code below.
 
+.. figure:: ../_static/Images/fcd_export.png
+    :width: 600
+    :align: center
+    :height: 300
+    :alt: service schema
+    :figclass: align-cente
 
+To circumvent the problem of handling broken geo tiff files, we reccomend that the downloaded files be mosaicked together, before uploading them into the database, as will be dicussed in the next section. While applying different mosaicking codes, the codes that worked seamlessly were R scripts, however, python scripts are also available.
+See the code chunk below from R.
 
+#. R code example to mosaic the files
+
+    .. code-block:: bash
+
+		setwd("G:/My Drive/TROFMIS_products IGADLandsat FCD")
+		getwd()
+
+		list.dirs("G:/My Drive/TROFMIS_products IGADLandsat FCD")
+
+		my_dirs<- "G:/My Drive/TROFMIS_products IGADLandsat FCD" 
+
+		list.files()
+
+		all_text_files <- list.files(my_dirs, pattern = "\\.tif$", full.names = TRUE)
+		list_data <- list()
+
+		for (file in all_text_files){
+
+		  print(file)
+		}
+
+		cat(list1)
+		print(list1)
+
+		r1<-stack(all_text_files[1])
+		r2<-stack(all_text_files[2])
+		r3<-stack(all_text_files[3])
+		r4<-stack(all_text_files[4])
+		r5<-stack(all_text_files[5])
+		r6<-stack(all_text_files[6])
+		r7<-stack(all_text_files[7])
+		r8<-stack(all_text_files[8])
+		r9<-stack(all_text_files[9])
+		r10<-stack(all_text_files[10])
+		r11<-stack(all_text_files[11])
+		r12<-stack(all_text_files[12])
+		r13<-stack(all_text_files[13])
+		r14<-stack(all_text_files[14])
+		r15<-stack(all_text_files[15])
+		r16<-stack(all_text_files[16])
+		r17<-stack(all_text_files[17])
+		r18<-stack(all_text_files[18])
+		r19<-stack(all_text_files[19])
+		r20<-stack(all_text_files[20])
+		r21<-stack(all_text_files[21])
+		r22<-stack(all_text_files[22])
+		r23<-stack(all_text_files[23])
+		r24<-stack(all_text_files[24])
+		r25<-stack(all_text_files[25])
+		r26<-stack(all_text_files[26])
+		r27<-stack(all_text_files[27])
+		r28<-stack(all_text_files[28])
+		r29<-stack(all_text_files[29])
+		r30<-stack(all_text_files[30])
+		r31<-stack(all_text_files[31])
+		r32<-stack(all_text_files[32])
+		r33<-stack(all_text_files[33])
+		r34<-stack(all_text_files[34])
+		r35<-stack(all_text_files[35])
+		r36<-stack(all_text_files[36])
+		r37<-stack(all_text_files[37])
+		r38<-stack(all_text_files[38])
+		r39<-stack(all_text_files[39])
+		r40<-stack(all_text_files[40])
+		r41<-stack(all_text_files[41])
+		r42<-stack(all_text_files[42])
+		r43<-stack(all_text_files[43])
+		r44<-stack(all_text_files[44])
+		r45<-stack(all_text_files[45])
+		r46<-stack(all_text_files[46])
+		r47<-stack(all_text_files[47])
+		r48<-stack(all_text_files[48])
+		r49<-stack(all_text_files[49])
+		r50<-stack(all_text_files[50])
+		r51<-stack(all_text_files[51])
+		r52<-stack(all_text_files[52])
+		r53<-stack(all_text_files[53])
+		r54<-stack(all_text_files[54])
+		r55<-stack(all_text_files[55])
+		r56<-stack(all_text_files[56])
+		r57<-stack(all_text_files[57])
+		r58<-stack(all_text_files[58])
+		r59<-stack(all_text_files[59])
+		r60<-stack(all_text_files[60])
+
+		print(r19)
+
+		rmoz<- mosaic(r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,
+			      r19,r20,r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,r31,r32,r33,r34,r35,
+			      r36,r37,r38,r39,r40,r41,r42,r43,r44,r45,r46,r47,r48,r49,r50,r51,r52,
+			      r53,r54,r55,r56,r57,r58,r59,r60
+			      ,fun = mean,filename = 'FCD_OUTPUT_2019.tif', tolerance=0.05)     
+		rmoz
+		plot(r3)
+
+When the rasters are a multiband raster, the call function *stack* is used, else, R normally calls single rasters as *raster*
 
 
 FCD Data Encoding
@@ -747,20 +875,46 @@ the Non- Forest areas were capped at below 30 percent as captured in the table b
 | Dense Canopy     | 65        | 100     | 
 +------------------+-----------+---------+
 
+The Style Descriptor Layer for use in visualising FCD is as shwon in the code chunck below.
+
+ .. code-block:: bash
+ 
+		<?xml version="1.0" encoding="UTF-8"?>
+		<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" 
+		xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml"         xmlns:ogc="http://www.opengis.net/ogc">
+		  <UserLayer>
+		    <sld:LayerFeatureConstraints>
+		      <sld:FeatureTypeConstraint/>
+		    </sld:LayerFeatureConstraints>
+		    <sld:UserStyle>
+		      <sld:Name>FCD2001_mos</sld:Name>
+		      <sld:FeatureTypeStyle>
+			<sld:Rule>
+			  <sld:RasterSymbolizer>
+			    <sld:ChannelSelection>
+			      <sld:GrayChannel>
+				<sld:SourceChannelName>1</sld:SourceChannelName>
+			      </sld:GrayChannel>
+			    </sld:ChannelSelection>
+			    <sld:ColorMap type="intervals">
+			      <sld:ColorMapEntry label="Non Forest" quantity="30" color="#f4f1da"/>
+			      <sld:ColorMapEntry label="Moderate Dense" quantity="45" color="#a8a800"/>
+			      <sld:ColorMapEntry label="Open Forest" quantity="65" color="#00d238"/>
+			      <sld:ColorMapEntry label="Dense Forest" quantity="100" color="#267300"/>
+			    </sld:ColorMap>
+			  </sld:RasterSymbolizer>
+			</sld:Rule>
+		      </sld:FeatureTypeStyle>
+		    </sld:UserStyle>
+		  </UserLayer>
+		</StyledLayerDescriptor>
+
+
+
+
 
 To compute the FCD output, the figure below summarises the steps applied in the computation.
 
-
-
-
-.. figure:: ../_static/Images/fcd_flowchart.png
-    :width: 350
-    :align: center
-    :height: 250
-    :alt: service schema
-    :figclass: align-center
-
-    FCD computation summary.
     
     
 
