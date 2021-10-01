@@ -44,6 +44,29 @@ The figure below summarizes the steps of generating FCD product using earth obse
     :figclass: align-center
 
     FCD computation summary.
+    
+ 
+Understanding Scripting of FCD
+=============================================
+FCD products were scripted using Javascript language in Google earth engine platform. The scripts computed the inidces and combined the
+output to give the final FCD output.
+In order to script the FCD outputs, it is vital that the following are defined.
+* The Forest of Interest
+* The specific year for product computation
+
+Understanding the Basics of Satellite Imagery
+==========================================================
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -69,6 +92,9 @@ the Non- Forest areas were capped at below 30 percent as captured in the table b
 
 
 To compute the FCD output, the figure below summarises the steps applied in the computation.
+
+
+
 
 .. figure:: ../_static/Images/fcd_flowchart.png
     :width: 350
