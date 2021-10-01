@@ -80,9 +80,9 @@ The carbon flux statistics are generated as shown in the illustrated steps above
 Please refer to the code as is shown below.
 
 .. figure:: ../_static/Images/ref_product.png
-    :width: 351
+    :width: 500
     :align: center
-    :height: 300
+    :height: 400
     :alt: service schema
     :figclass: align-center
     
