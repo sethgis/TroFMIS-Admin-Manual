@@ -2,7 +2,7 @@
 
 
 ***************************************************
-Computing Carbon Flux
+Uploading Carbon Flux
 ***************************************************
 The canopy disturbance/forest change are generated from the simple image difference acquired from the comparison of 
 the Forest Canopy Density products of 2016 as baseline year, and subsequent years (2017, 2018, 2019, 2020).
