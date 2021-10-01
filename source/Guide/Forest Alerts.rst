@@ -3,7 +3,7 @@
 
 
 ***************************************************
-Computing Forest Disturbance - Radar
+Maintaining Forest Disturbance - Radar
 ***************************************************
 To compute forest distubance, the user is required to select the forest disturbance Product from the drop downlist as 
 shown below.
