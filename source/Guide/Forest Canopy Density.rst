@@ -1,7 +1,7 @@
 .. figure:: ../_static/Images/trofmis3.png
 
 ***************************************************
-Computing Forest Canopy Density
+Uploading Forest Canopy Density
 ***************************************************
 
 1. To compute Forest Canopy Density, select the Forest Canopy density product from the from the forest products drop down list.
