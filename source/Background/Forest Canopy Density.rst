@@ -705,8 +705,17 @@ The figure below summarizes the steps of generating FCD product using earth obse
 
 Understanding the Code Chunk Above
 ==========================================================
+Please see the description of the code in the blue call outs as shown below.
 
-.. figure:: ../_static/Images/trofmis3.png
+.. figure:: ../_static/Images/AREA.png
+    :width: 600
+    :align: center
+    :height: 300
+    :alt: service schema
+    :figclass: align-center
+
+The FCD is expressed as a percentage, and the code chunk beloq is used to normalise the code into percentage as shown below.
+
 
 
 
