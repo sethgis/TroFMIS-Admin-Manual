@@ -1,62 +1,22 @@
 .. figure:: ../_static/Images/trofmis3.png
 
+.. note::
+   This is note text. Use a note for information you want the user to
+   pay particular attention to.
 
+   If note text runs over a line, make sure the lines wrap and are indented to
+   the same level as the note tag. If formatting is incorrect, part of the note
+   might not render in the HTML output.
 
-***************************************************
-Forest Canopy Density (FCD)
-***************************************************
-The FCD product in specified forests are generated using the Forest Canopy Density Model (FCD algorithm), as applied by (Rikimaru, et al, 2002). 
-TroFMIS approach made slight modification to the original FCD technique, by excluding Principal Component Analysis (PCA),
-which is computational intensive over large areas, or when computed using high resolution data. 
-The modified FCD approach can be expressed as:
+   Notes can have more than one paragraph. Successive paragraphs must
+   indent to the same level as the rest of the note.
 
-.. math::
+.. warning::
+    This is warning text. Use a warning for information the user must
+    understand to avoid negative consequences.
 
- FCD=√(AVI × SSI+1)-1 
- :label: FCD model
-
-
-Where, the Advanced Vegetation Index (AVI), like many vegetation index, gives precedence to the areas with healthier vegetation as
-compraed to the areas with scarce or no vegetation. The AVI was computed as shown in the equation below.
-
-.. math::
-
- AVI =  ((NIR+1)*(65536 -Red))*1/3
- :label: AVI model
-
-
-
-The AVI was directly fused with Scaled Shadow Index (SSI), to yield the ultimate forest canopy densities.
-i.e. areas with canopy cover while segregating areas with very little or no vegetation. 
-SSI applied the numerical intergration of Blue and Green bands to identify shadow covered areas as shown in the equation below.
-
-.. math::
- SSI=(256-Blue)*(256-Green)*(256-Red)/3
- :label: SSI model	
-	
-The figure below summarizes the steps of generating FCD product using earth observation based methods.
-
-.. figure:: ../_static/Images/fcd_image.png
-    :width: 300
-    :align: center
-    :height: 400
-    :alt: service schema
-    :figclass: align-center
-
-    FCD computation summary.
-    
- 
-Understanding Scripting of FCD
-=============================================
-FCD products were scripted using Javascript language in Google earth engine platform. The scripts computed the inidces and combined the
-output to give the final FCD output.
-In order to script the FCD outputs, it is vital that the following are defined.
-* The Forest of Interest
-* The specific year for product computation
-
-Understanding the Basics of Satellite Imagery
-==========================================================
-
+    Warnings are formatted in the same way as notes. In the same way,
+    lines must be broken and indented under the warning tag.
 
 
 
