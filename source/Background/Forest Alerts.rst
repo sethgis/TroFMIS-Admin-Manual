@@ -239,9 +239,26 @@ The dependecies include the listed codes, they are a requirement before proceedi
     :alt: service schema
     :figclass: align-center	
 		
+The radar scripts acquires two compariable images to generate the changes. The images are taken through some smoothening steps to allow for comparability of the scene,
+in addition to processing the focal mean of the acquired image within the described time as shown below.
+
+
+.. figure:: ../_static/Images/radar_date.png
+    :width: 500
+    :align: center
+    :height: 400
+    :alt: service schema
+    :figclass: align-center	
 		
-		
-		
+The acquired changes are passed through a statistical smoothening process, and the 95% confidence change is taken as the ultimate changes. The changes are then shared with the subscribers of the service in TroFMIS.
+
+.. figure:: ../_static/Images/stats.png
+    :width: 500
+    :align: center
+    :height: 400
+    :alt: service schema
+    :figclass: align-center
+    
 		
 
 .. figure:: ../_static/Images/trofmis3.png  
