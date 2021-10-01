@@ -37,8 +37,23 @@ The figure below shows the summary of computing the forest changes.
     :figclass: align-center
 
     Forest Canopy Changes computation.
-    
- 
+   
+Computing the FCC products in Google Earth Engine
+======================================================== 
+The code provided in the Forest Canopy Density section, provides a multi products as outputs, and this include both the 
+* Forest Canopy Densities and
+* Forest Canopy Changes both annual and Reference product. 
+
+The description of the screen shot below from the main code highlights how the Changes are generated.
+
+.. figure:: ../_static/Images/ref_product.png
+    :width: 351
+    :align: center
+    :height: 341
+    :alt: service schema
+    :figclass: align-center
+
+
  
  
 .. figure:: ../_static/Images/trofmis3.png
