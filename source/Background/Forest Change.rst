@@ -162,6 +162,55 @@ The code to generate the multi prouct is also encompassed below.
  To use R in mosaicking, it is vital that the working directory is set prior to computation. This is to allow the files to be read and writtenly seamlessly, 
  as well as to avoid errors that might arise.
  
+Forest Change Encoding
+======================================================== 
+Forest Changes come in a multi band format, whereby, each product has 3 bands encorded as follows.
+
++------------------+-----------+---------+
+| Band Value       | Class     | Max     | 
++==================+===========+=========+
+| 1                | Stable    |  1      | 
++------------------+-----------+---------+
+| 2                | Gain      |  2      | 
++------------------+-----------+---------+
+| 3                | Loss      |  3      | 
++------------------+-----------+---------+
+
+ 
+The Style Layer Descriptor (SLD), can be referenced from the code below.
+
+ .. code-block:: bash
+
+                  <?xml version="1.0" encoding="UTF-8"?>
+                              <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" 
+                              xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml"         xmlns:ogc="http://www.opengis.net/ogc">
+                                <UserLayer>
+                                  <sld:LayerFeatureConstraints>
+                                    <sld:FeatureTypeConstraint/>
+                                  </sld:LayerFeatureConstraints>
+                                  <sld:UserStyle>
+                                    <sld:Name> Changes </sld:Name>
+                                    <sld:FeatureTypeStyle>
+                                    <sld:Rule>
+                                      <sld:RasterSymbolizer>
+                                        <sld:ChannelSelection>
+                                          <sld:GrayChannel>
+                                          <sld:SourceChannelName>1</sld:SourceChannelName>
+                                          </sld:GrayChannel>
+                                        </sld:ChannelSelection>
+                                        <sld:ColorMap type="intervals">
+                                          <sld:ColorMapEntry label="Stable" quantity="1" color="#549914"/>
+                                          <sld:ColorMapEntry label="Gain" quantity="2" color="#45f70a"/>
+                                          <sld:ColorMapEntry label="Loss" quantity="3" color="#fa1702"/>
+                                        </sld:ColorMap>
+                                      </sld:RasterSymbolizer>
+                                    </sld:Rule>
+                                    </sld:FeatureTypeStyle>
+                                  </sld:UserStyle>
+                                </UserLayer>
+                              </StyledLayerDescriptor>
+ 
+ 
  
  
 .. figure:: ../_static/Images/trofmis3.png
