@@ -3,7 +3,7 @@
 
 
 ***************************************************
-Computing Forest Canopy Change (FCC)
+Uploading Forest Canopy Change (FCC)
 ***************************************************
 In order to compute Forest Canopy Change, the user needs to select the 
 Forest Canopy Change product in the drop down list as was done in the previous selection on Forest Canopy Density.
