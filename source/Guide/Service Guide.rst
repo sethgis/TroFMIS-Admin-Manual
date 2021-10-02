@@ -47,12 +47,24 @@ The mandatory steps include:
 .. figure:: ../_static/Images/saveadmin.png
 
 
+To update the **admin level 0** click the django link as shown in the figure below.
 
+.. figure:: ../_static/Images/level0.png
 
+The link leads to a panel that allows the admin to add the level 0 boundaries, of a specific country as shown in the figure below.
 
+.. figure:: ../_static/Images/addlevel0.png
+
+Remeber to give a name to the country boundary, as you save based on you next actions.
    
+.. figure:: ../_static/Images/savelevel0.png
 
+To add the regional shapefile, follow the steps as shown above in both admin level boundary, however, accessing through the **Regional Boundary** link.
 
+.. figure:: ../_static/Images/region.png
+
+Managing Administartive Boundaries
+====================================
 
   
 
