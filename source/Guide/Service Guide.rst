@@ -14,41 +14,47 @@ The figure below shows the django admin home page, when logged in. To log in to 
 authorised TroFMIS email and password that were provided.
 
 .. figure:: ../_static/Images/django_home.png
-    :width: 350
-    :align: center
-    :height: 700
-    :alt: service schema
-    :figclass: align-center
+  
 
 
 The components of the django admin are described in details in the next sections.
 
 
+***************************************************
+TroFMIS Models
+***************************************************
+Managing Administartive Boundaries
 ====================================
-In order to access some specific system functionalities, such as computing the Forest Surveilance using Radar,
-A will be required to register and log in wih their credentials, specifying their user name and email addresses.
-Top register please click the icon as illustrated in the figure below.
+TroFNMIS has both the level 0 (Country) and level 1 boundary (Forest boundaries).
+For the system continuity, the administrative boundaries will require updating. 
+The system admin needs to upload the admin boundaries in shapefile format, incase of any update and system advancement.
 
-.. figure:: ../_static/Images/registration.png
-    :width: 700
-    :align: center
-    :height: 350
-    :alt: service schema
-    :figclass: align-center
+To update the **admin level 1** click the django link as shown in the figure below.
 
-    Registration icon.
+.. figure:: ../_static/Images/admin1.png
 
-After accessing the registration form, a user will insert their preffered credentials and a working email in order to recieve the specified 
-output after computation. The registration form is as shown in the figfure below.
+The link leads to a panel that allows the admin to add the level 1 boundaries, of a specific forest as shown in the figure below.
 
-.. figure:: ../_static/Images/register.png
-    :width: 700
-    :align: center
-    :height: 350
-    :alt: service schema
-    :figclass: align-center
+.. figure:: ../_static/Images/clickadmin1.png
 
-    Registration form.
+When loading the admin level 1 boundary, remebner to follow the steps as shown in the figure below.
+The mandatory steps include:
+**Giving the admin boundary a name**, 
+**Associate the boundary with country of origin**, 
+**Save the file based on the next actions**.
+
+
+.. figure:: ../_static/Images/saveadmin.png
+
+
+
+
+
+   
+
+
+
+  
 
 
 
