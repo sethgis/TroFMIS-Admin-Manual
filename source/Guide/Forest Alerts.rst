@@ -32,5 +32,21 @@ When any of the listed files is accessed through clicking, the system gives the 
 
 .. figure:: ../_static/Images/forest.png
 
+
+Forest Alerts Subscribers
+***************************************************
+To access the subscribers list and their contact email, click on the **subscription** or the **users** link in django admin. 
+
+.. figure:: ../_static/Images/subscribers.png
+
+The emails, when accessed further, gives more detail on the system user, and can be used to provide more priviledges to specific users, including the rights to upload 
+custom shapefile. This accessed panel, shows other information including the date of TroFMIS account creation.
+
+.. figure:: ../_static/Images/more.png
+
+.. figure:: ../_static/Images/more1.png
+
+
+
 .. toctree::
    :maxdepth: 3
