@@ -63,6 +63,11 @@ TroFMIS system is free and open-source system. It is licensed under the GNU Gene
    
    
 .. figure:: ../_static/Images/trofmis3.png
+  
+About TroFMIS Admin Manual (TAM)
+--------------------------------
+TAM is a step by step guideline for the system admin on how to manage the data, system users, maintenance and system updating.
+TAM will be managed by ICPAC team and will be available for the system administrators only. 
     
     
 .. toctree::
