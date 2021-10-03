@@ -42,7 +42,7 @@ monitoring and assess forest activities, in order to achieve sustainable natural
 
    /Introduction/general_information
    /Introduction/data
-   /Introduction/faq	
+   	
 
 
    
