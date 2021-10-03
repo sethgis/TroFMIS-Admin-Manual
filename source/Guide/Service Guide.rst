@@ -19,6 +19,18 @@ authorised TroFMIS email and password that were provided.
 
 The components of the django admin are described in details in the next sections.
 
+***************************************************
+System Settings
+***************************************************
+System settings can be accessed by going to System Settings. From here you
+can set several variables that are key to system resources management. One of the variables you can configure from
+here is the maximum size of a polygon that can be processed by the system on the fly. The system settings, however, can only be configured once
+during system development phase, and the system will reuse the standards set to compute and generate results. The system setting compoenents is illustrated below.
+
+.. figure:: ../_static/Images/sys1.png
+.. figure:: ../_static/Images/sys2.png
+.. figure:: ../_static/Images/sys3.png
+
 
 ***************************************************
 TroFMIS Models
