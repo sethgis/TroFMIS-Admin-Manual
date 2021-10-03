@@ -28,7 +28,9 @@ This section lists all the forest that have been suscribed by the users, and are
 
 .. figure:: ../_static/Images/plans.png
 
+When any of the listed files is accessed through clicking, the system gives the manager more functionality to manage specific forests of interest. See the illustration below.
 
+.. figure:: ../_static/Images/forest.png
 
 .. toctree::
    :maxdepth: 3
