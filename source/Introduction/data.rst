@@ -97,7 +97,7 @@ Forest Disturbance and Alerts
 +==================+===========+=========+
 | Loss             | 0.5 ha    | Inf     | 
 +------------------+-----------+---------+
-| Gain             | - 0.5 ha  | Inf     | 
+| Gain             | 0.5 ha  | Inf     | 
 +------------------+-----------+---------+
 
 .. figure:: ../_static/Images/trofmis3.png
