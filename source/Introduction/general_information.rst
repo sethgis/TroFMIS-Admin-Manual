@@ -69,6 +69,10 @@ About TroFMIS Admin Manual (TAM)
 TAM is a step by step guideline for the system admin on how to manage the data, system users, maintenance and system updating.
 TAM will be managed by ICPAC team and will be available for the system administrators only. 
 
+
+TRAINING ON ADMIN ON TROPICAL FOREST
+------------------------------------------
+
 ICPAC TRAINING ON 2021 DEC 20TH 
 ICPAC TRAINING ON 2021 DEC 20TH 
 ICPAC TRAINING ON 2021 DEC 20TH 
