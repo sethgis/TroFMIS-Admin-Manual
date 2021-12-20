@@ -10,7 +10,7 @@ which are inclusive of all datasets used in the proposed REDD+ models to achieve
 The data sources are discussed in the following sections.
 
 -------------------------------------------------------
-Data Source
+Data Sources
 -------------------------------------------------------
 
 +------------------+-----------+---------+--------+------------------+
