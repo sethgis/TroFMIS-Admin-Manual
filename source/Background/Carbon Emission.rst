@@ -1,5 +1,10 @@
 .. figure:: ../_static/Images/trofmis3.png
 
+******************************************************************************************************
+WE ARE TRYING TO SEE HOW TO REPORT ON CARBON CHANGES IN THE TROPICAL FOREST
+******************************************************************************************************
+
+
 
 
 ***************************************************
@@ -86,8 +91,8 @@ Please refer to the code as is shown below.
                             .where(FCD_4_classes.eq(1), 1) // non forest 
                             .where(FCD_4_classes.gte(2).and(FCD_4_classes.lte(4)), 2) // Forest 
 
-                            // get the changes gains and losses
-                            function forestchange(year){
+                            //Get the changes gains and losses
+                            function forest change(year){
 
                               var prevyear = year -1 
                               var current = FCD_2_clases.select("FCD"+year)
